@@ -1,5 +1,5 @@
 body {
-  background: #aabeca;
+  background: #fff;
   background: -moz-linear-gradient(top, #aabeca 0%, #f8faf0 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #aabeca), color-stop(100%, #f8faf0));
   background: -webkit-linear-gradient(top, #aabeca 0%, #f8faf0 100%);
@@ -19,9 +19,9 @@ h1, h2, h3, h4, h5, h6 {
     height: auto;
     width: auto; }
   #top-panel td > a {
-    background: url("http://www.0xdata.com/assets/ico/0xdata_logo.png") 0 0 no-repeat;
+    background: url("http://www.0xdata.com/assets/ico/0xdata_logo_72x72.png") 0 0 no-repeat;
     display: block;
-    height: 85px;
+    height: 75px;
     width: 276px;
     margin: 10px 0 0 10px; }
     #top-panel td > a img {
