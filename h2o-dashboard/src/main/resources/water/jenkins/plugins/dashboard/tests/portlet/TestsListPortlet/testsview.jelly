@@ -1,0 +1,12 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:dp="/hudson/plugins/view/dashboard">
+<j:forEach var="job" items="${jobs}">
+    <table id="job.tests.view" class="sortable pane bigtable" style="margin-top: 0px;">
+      <tr style="border-top: 0px;">
+        <th tooltip="${%Status of the test}" align="left">${job.name}</th>
+      </tr>
+      <j:forEach var="result" items="${it.getJobTestLastRunResults(job).failedTest}">
+        <tr class='red'><td>${result}</td></tr>
+      </j:forEach>
+    </table>
+</j:forEach>
+</j:jelly>
