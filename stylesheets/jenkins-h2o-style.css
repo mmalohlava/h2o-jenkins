@@ -60,12 +60,9 @@ h1, h2, h3, h4, h5, h6 {
 #main-panel {
   background: #fff; }
   #main-panel > h1 {
-    margin-top: 5px; }
+    margin-top: 0px; }
 
 #main-table {
-  background-color: #fff; 
-  background-image: url("http://mmalohlava.github.com/h2o-jenkins/images/grid-18px-masked.png");
-  background-repeat: repeat-x;
   border-top: 0;
   border-bottom: 0; }
 
