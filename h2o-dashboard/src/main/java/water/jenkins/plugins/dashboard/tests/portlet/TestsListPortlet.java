@@ -34,7 +34,7 @@ public class TestsListPortlet extends DashboardPortlet {
 
     @Override
     public String getDisplayName() {      
-      return "Tests";
+      return "Tests radiator view";
     }    
   }
   

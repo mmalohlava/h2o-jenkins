@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers class="vector"/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>echo &apos;&lt;testsuites&gt;
+    &lt;testsuite name=&quot;Customer Demographics Tests&quot; tests=&quot;9&quot; failures=&quot;0&quot; timestamp=&quot;2012-08-23T14:40:44.874443-05:00&quot;&gt;
+        &lt;testcase name=&quot;Insert First Name&quot; classname=&quot;CustomerDemographicsPKG.Name&quot;/&gt;
+        &lt;testcase name=&quot;Insert Last Name&quot; classname=&quot;CustomerDemographicsPKG.Name&quot;/&gt;
+        &lt;testcase name=&quot;Change First Name&quot; classname=&quot;CustomerDemographicsPKG.Name&quot;/&gt;
+        &lt;testcase name=&quot;Change Last Name&quot; classname=&quot;CustomerDemographicsPKG.Name&quot;/&gt;
+        &lt;testcase name=&quot;Delete First Name&quot; classname=&quot;CustomerDemographicsPKG.Name&quot;/&gt;
+        &lt;testcase name=&quot;Delete Last Name&quot; classname=&quot;CustomerDemographicsPKG.Name&quot;/&gt;
+        &lt;testcase name=&quot;Insert DOB&quot; classname=&quot;CustomerDemographicsPKG.Misc&quot;/&gt;
+        &lt;testcase name=&quot;Update DOB&quot; classname=&quot;CustomerDemographicsPKG.Misc&quot;/&gt;
+        &lt;testcase name=&quot;Delete DOB&quot; classname=&quot;CustomerDemographicsPKG.Misc&quot;/&gt;
+    &lt;/testsuite&gt;
+    &lt;testsuite name=&quot;Customer Contact Tests&quot; tests=&quot;4&quot; failures=&quot;1&quot; timestamp=&quot;2012-08-23T14:40:44.874443-05:00&quot;&gt;
+        &lt;testcase name=&quot;Insert Street&quot; classname=&quot;CustomerContact.Address&quot;/&gt;
+        &lt;testcase name=&quot;Insert City&quot; classname=&quot;CustomerContact.Address&quot;/&gt;
+        &lt;testcase name=&quot;Insert State&quot; classname=&quot;CustomerContact.Address&quot;/&gt;
+        &lt;testcase name=&quot;Zip&quot; classname=&quot;CustomerContact.Address&quot;&gt;
+            &lt;error message=&quot;Zip code out of range&quot;&gt;Zip code 139819 is not in range of valid zip codes.&lt;/error&gt;
+        &lt;/testcase&gt;
+        &lt;testcase name=&quot;Insert Home Phone&quot; classname=&quot;CustomerContact.Phone&quot;/&gt;
+        &lt;testcase name=&quot;Insert Cell Phone&quot; classname=&quot;CustomerContact.Phone&quot;/&gt;
+        &lt;testcase name=&quot;Insert Business Phone&quot; classname=&quot;CustomerContact.Phone&quot;/&gt;
+    &lt;/testsuite&gt;
+&lt;/testsuites&gt;&apos; &gt; TEST_X_results.xml</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.tasks.junit.JUnitResultArchiver>
+      <testResults>*.xml</testResults>
+      <keepLongStdio>false</keepLongStdio>
+      <testDataPublishers/>
+    </hudson.tasks.junit.JUnitResultArchiver>
+  </publishers>
+  <buildWrappers/>
+</project>

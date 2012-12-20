@@ -1,49 +1,44 @@
 package water.jenkins.plugins.dashboard.tests;
 
 import hudson.model.Run;
+import hudson.tasks.junit.PackageResult;
 import hudson.tasks.junit.CaseResult;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Set;
 
 public class TestRunResults {
   
   public static final TestRunResults EMPTY_RESULT = new TestRunResults(null);
-
-  private ArrayList<CaseResult> okTests      = new ArrayList<CaseResult>();
-  private ArrayList<CaseResult> failedTests  = new ArrayList<CaseResult>();
-  private ArrayList<CaseResult> skippedTests = new ArrayList<CaseResult>(); 
-  private ArrayList<CaseResult> tests        = new ArrayList<CaseResult>();
+  
+  private HashMap<PackageResult, ArrayList<CaseResult>> caseResults = new HashMap<PackageResult, ArrayList<CaseResult>>(); 
+  
   private Run run;
   
-  public TestRunResults(Run run) {
+  public TestRunResults(final Run run) {
     this.run = run;    
   }
 
-  public void addTest(CaseResult cr) {
-    tests.add(cr);     
-    if (cr.isPassed()) {
-      okTests.add(cr);
-    } else if (cr.isSkipped()) {
-      skippedTests.add(cr);
-    } else {
-      failedTests.add(cr);
+  public Set<PackageResult> getPackages() {
+    return caseResults.keySet();
+  }
+  
+  public void addTestPackage(final PackageResult pack) {
+    if (!caseResults.containsKey(pack)) {
+      caseResults.put(pack, new ArrayList<CaseResult>());            
     }
-  } 
+  }  
   
-  public ArrayList<CaseResult> getTests() {
-    return tests;
+  public void addCaseResult(final PackageResult pack, final CaseResult cr) {
+    if (!caseResults.containsKey(pack)) {
+      addTestPackage(pack);      
+    } 
+    caseResults.get(pack).add(cr);
   }
   
-  public ArrayList<CaseResult> getFailedTests() {
-    return failedTests;
+  public List<CaseResult> getCaseResults(final PackageResult pack) {
+    return caseResults.get(pack);
   }
-  
-  public ArrayList<CaseResult> getOkTests() {
-    return okTests;
-  }
-  public ArrayList<CaseResult> getSkippedTests() {
-    return skippedTests;
-  }
-  
-  
 }

@@ -1,12 +1,83 @@
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:dp="/hudson/plugins/view/dashboard">
+<style scoped="scoped">
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.rounded-corners {
+-webkit-border-radius: .5em;
+-moz-border-radius: .5em;
+border-radius: .5em;
+}
+.testsuite {
+margin: 1.3%;
+width: 90%;
+height: auto;
+padding: 10px;
+border: 1px solid black;
+}
+
+.testsuite p {
+font-size: 2.1em;
+text-overflow: ellipsis;
+-o-text-overflow: ellipsis;
+margin: 0px;
+}
+
+.test {
+color: white;
+font-size: 1.5em;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+-o-text-overflow: ellipsis;
+float: left;
+margin: 1.3%;
+width: 160px;
+height: 60px;
+padding: 10px;
+
+border-radius: .5em;
+-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.4);
+-moz-box-shadow: 0 3px 6px rgba(0,0,0,.4);
+box-shadow: 0 3px 6px rgba(0,0,0,.4);
+}
+
+.testOk {
+border: solid 1px #007600;
+background: #009511;
+}
+
+.testFailed {
+border: solid 1px #980c10;
+background: #d81b21;
+}
+
+
+.testSkipped {
+border: solid 1px #555;
+background: #6e6e6e;
+}
+</style>
+
 <j:forEach var="job" items="${jobs}">
-    <table id="job.tests.view" class="sortable pane bigtable" style="margin-top: 0px;">
-      <tr style="border-top: 0px;">
-        <th tooltip="${%Status of the test}" align="left">${job.name}</th>
-      </tr>
-      <j:forEach var="result" items="${it.getJobTestLastRunResults(job).tests}">
-        <tr class='red'><td>${result.name}</td></tr>
-      </j:forEach>
-    </table>
+  <j:set var="testResultsBean" value="${it.getJobTestLastRunResults(job)}" />
+  <j:forEach var="pack" items="${testResultsBean.packages}">
+  <div class="testsuite rounded-corners clearfix">
+    <p>Test package ${pack.name}</p>
+    <j:forEach var="test" items="${testResultsBean.getCaseResults(pack)}">
+        <j:choose>
+        <j:when test="${test.isPassed()}"><j:set var="tclass" value="testOk" /></j:when>
+        <j:when test="${test.isSkipped()}"><j:set var="tclass" value="testSkipped" /></j:when>
+        <j:otherwise><j:set var="tclass" value="testFailed" /></j:otherwise>
+        </j:choose>
+        <div class="test ${tclass}">${test.name}</div>
+    </j:forEach>    
+  </div>  
+  </j:forEach>
 </j:forEach>
 </j:jelly>
