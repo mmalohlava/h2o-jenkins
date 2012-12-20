@@ -1,5 +1,10 @@
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:dp="/hudson/plugins/view/dashboard">
 <style scoped="scoped">
+a:link {text-decoration:none; color: inherit;}
+a:visited {text-decoration:none; color: inherit;}
+a:hover {text-decoration:none; color: inherit;}
+a:active {text-decoration:none; color: inherit;}
+
 .clearfix:after {
     content: ".";
     display: block;
@@ -13,33 +18,38 @@
 -moz-border-radius: .5em;
 border-radius: .5em;
 }
-.testsuite {
+
+.testpack {
 margin: 1.3%;
 width: 90%;
 height: auto;
 padding: 10px;
 border: 1px solid black;
+position: relative;
 }
 
-.testsuite p {
-font-size: 2.1em;
+.testpack p {
+font-size: 2em;
+margin: 0px;
+overflow: hidden;
+white-space: nowrap;
 text-overflow: ellipsis;
 -o-text-overflow: ellipsis;
-margin: 0px;
 }
 
 .test {
 color: white;
-font-size: 1.5em;
+font-size: 1.2em;
 overflow: hidden;
 white-space: nowrap;
 text-overflow: ellipsis;
 -o-text-overflow: ellipsis;
 float: left;
-margin: 1.3%;
-width: 160px;
-height: 60px;
+margin: 1.2%;
+width: 140px;
+height: 40px;
 padding: 10px;
+position: relative;
 
 border-radius: .5em;
 -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.4);
@@ -62,21 +72,31 @@ background: #d81b21;
 border: solid 1px #555;
 background: #6e6e6e;
 }
+
+.trend { 
+ font-size: 0.7em;
+ color: #444; 
+ float: right; 
+ position: absolute; bottom: 5px;
+}
 </style>
 
 <j:forEach var="job" items="${jobs}">
   <j:set var="testResultsBean" value="${it.getJobTestLastRunResults(job)}" />
   <j:forEach var="pack" items="${testResultsBean.packages}">
-  <div class="testsuite rounded-corners clearfix">
-    <p>Test package ${pack.name}</p>
+  <div class="testpack rounded-corners clearfix">    
+    <p><a href="${testResultsBean.getURL(pack)}">Test package ${pack.name}</a></p>   
     <j:forEach var="test" items="${testResultsBean.getCaseResults(pack)}">
         <j:choose>
         <j:when test="${test.isPassed()}"><j:set var="tclass" value="testOk" /></j:when>
         <j:when test="${test.isSkipped()}"><j:set var="tclass" value="testSkipped" /></j:when>
         <j:otherwise><j:set var="tclass" value="testFailed" /></j:otherwise>
         </j:choose>
-        <div class="test ${tclass}">${test.name}</div>
-    </j:forEach>    
+        <div class="test ${tclass}">
+        <a href="${testResultsBean.getURL(test)}">${test.name}</a>
+        <div class="trend"><a href="${testResultsBean.getURL(test)}/history">trend</a></div></div>
+    </j:forEach>
+    <div class="trend"><a href="${testResultsBean.getURL(pack)}/history">trend</a></div>
   </div>  
   </j:forEach>
 </j:forEach>

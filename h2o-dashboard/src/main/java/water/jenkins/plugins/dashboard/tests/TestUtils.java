@@ -11,7 +11,7 @@ import hudson.tasks.junit.ClassResult;
 public class TestUtils {
   
   protected static TestRunResults getTestRunResults(Run run, TestResultAction tra) {
-    TestRunResults trr = new TestRunResults(run);
+    TestRunResults trr = new TestRunResults(run, tra.getUrlName());
     TestResult tr = tra.getResult();
     for (PackageResult packRes : tr.getChildren()) {
       trr.addTestPackage(packRes);            
@@ -33,9 +33,9 @@ public class TestUtils {
     
     SurefireAggregatedReport surefireTestResults = run.getAction(SurefireAggregatedReport.class);
     if (surefireTestResults != null) {
-       return new TestRunResults(run);
+       return TestRunResults.EMPTY_RESULT;
     }
     
-    return new TestRunResults(run);
+    return TestRunResults.EMPTY_RESULT;
  }
 }
