@@ -5,5 +5,5 @@
 
 mvn install -Dmaven.test.skip=true
 
-java -jar ./sandbox/jenkins-cli.jar -s http://23.23.182.217:8080 install-plugin ./target/h2o-dashboard.hpi
-# vi: 
+java -jar ./sandbox/jenkins-cli.jar -s http://23.23.182.217:8080 install-plugin ~/.m2/repository/org/jenkins-ci/plugins/h2o-dashboard/1.0-SNAPSHOT/h2o-dashboard-1.0-SNAPSHOT.hpi
+
