@@ -7,14 +7,15 @@ import hudson.tasks.junit.CaseResult;
 import hudson.tasks.test.TestResult;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Set;
 
 public class TestRunResults {
   
   public static final TestRunResults EMPTY_RESULT = new TestRunResults(null, null);
   
+  private ArrayList<PackageResult> packageResults = new ArrayList<PackageResult>();
   private HashMap<PackageResult, ArrayList<CaseResult>> caseResults = new HashMap<PackageResult, ArrayList<CaseResult>>(); 
   
   private Job job;
@@ -27,12 +28,14 @@ public class TestRunResults {
     this.testResultAction = testResultAction;
   }
 
-  public Set<PackageResult> getPackages() {
-    return caseResults.keySet();
+  public List<PackageResult> getPackages() {
+    List<PackageResult> result = packageResults;    
+    return result;
   }
   
   public void addTestPackage(final PackageResult pack) {
     if (!caseResults.containsKey(pack)) {
+      packageResults.add(pack);
       caseResults.put(pack, new ArrayList<CaseResult>());            
     }
   }  
@@ -45,7 +48,10 @@ public class TestRunResults {
   }
   
   public List<CaseResult> getCaseResults(final PackageResult pack) {
-    return caseResults.get(pack);
+    List<CaseResult> result = caseResults.get(pack);
+    Collections.sort(caseResults.get(pack));
+    
+    return result;
   }
   
   public String getURL(final TestResult tr) {
@@ -53,6 +59,5 @@ public class TestRunResults {
     sb.append(run.getUrl()).append(testResultAction).append(tr.getUrl());
     
     return sb.toString();
-  }  
-  
+  }    
 }

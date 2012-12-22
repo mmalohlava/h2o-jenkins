@@ -24,7 +24,7 @@ margin: 1.3%;
 width: 90%;
 height: auto;
 padding: 10px;
-border: 1px solid black;
+border: 1px solid #444;
 position: relative;
 }
 
@@ -39,14 +39,14 @@ text-overflow: ellipsis;
 
 .test {
 color: white;
-font-size: 1.2em;
+font-size: 1.1em;
 overflow: hidden;
 white-space: nowrap;
 text-overflow: ellipsis;
 -o-text-overflow: ellipsis;
 float: left;
 margin: 1.2%;
-width: 140px;
+width: 160px;
 height: 40px;
 padding: 10px;
 position: relative;
@@ -55,6 +55,11 @@ border-radius: .5em;
 -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.4);
 -moz-box-shadow: 0 3px 6px rgba(0,0,0,.4);
 box-shadow: 0 3px 6px rgba(0,0,0,.4);
+}
+
+.packageFailed {
+border: solid 1px #d81b21;
+background: #f8dddd;
 }
 
 .testOk {
@@ -88,7 +93,11 @@ background: #6e6e6e;
 <j:forEach var="job" items="${jobs}">
   <j:set var="testResultsBean" value="${it.getJobTestLastRunResults(job)}" />
   <j:forEach var="pack" items="${testResultsBean.packages}">
-  <div class="testpack rounded-corners clearfix">    
+  <j:choose>
+  <j:when test="${pack.getFailCount()>0}"><j:set var="pclass" value="packageFailed" /></j:when>
+  <j:otherwise><j:set var="pclass" value="" /></j:otherwise>
+  </j:choose>
+  <div class="${pclass} testpack rounded-corners clearfix">    
     <p><a href="${testResultsBean.getURL(pack)}" title="Package detail" >Test package ${pack.name}</a></p>   
     <j:forEach var="test" items="${testResultsBean.getCaseResults(pack)}">
         <j:choose>
