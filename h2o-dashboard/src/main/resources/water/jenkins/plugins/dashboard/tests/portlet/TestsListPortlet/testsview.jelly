@@ -74,18 +74,22 @@ background: #6e6e6e;
 }
 
 .trend { 
- font-size: 0.7em;
- color: #444; 
- float: right; 
- position: absolute; bottom: 5px;
+ position: absolute; right: 10px; top: 10px;
 }
+
+.trendbt { 
+ position: absolute; right: 10px; bottom: 10px;
+}
+
+.trend img { margin: 2px;}
+.trendbt img { margin: 2px;}
 </style>
 
 <j:forEach var="job" items="${jobs}">
   <j:set var="testResultsBean" value="${it.getJobTestLastRunResults(job)}" />
   <j:forEach var="pack" items="${testResultsBean.packages}">
   <div class="testpack rounded-corners clearfix">    
-    <p><a href="${testResultsBean.getURL(pack)}">Test package ${pack.name}</a></p>   
+    <p><a href="${testResultsBean.getURL(pack)}" title="Package detail" >Test package ${pack.name}</a></p>   
     <j:forEach var="test" items="${testResultsBean.getCaseResults(pack)}">
         <j:choose>
         <j:when test="${test.isPassed()}"><j:set var="tclass" value="testOk" /></j:when>
@@ -93,10 +97,16 @@ background: #6e6e6e;
         <j:otherwise><j:set var="tclass" value="testFailed" /></j:otherwise>
         </j:choose>
         <div class="test ${tclass}">
-        <a href="${testResultsBean.getURL(test)}">${test.name}</a>
-        <div class="trend"><a href="${testResultsBean.getURL(test)}/history">trend</a></div></div>
+        <a href="${testResultsBean.getURL(test)}" title="Test detail">${test.name}</a>
+        <div class="trendbt">
+        <a href="${testResultsBean.getURL(test)}" title="Test detail"><img src="${rootURL}/plugin/h2o-dashboard/images/detail.png" alt="Click to see test details..." /></a>
+        <a href="${testResultsBean.getURL(test)}/history" title="Test history"><img src="${rootURL}/plugin/h2o-dashboard/images/trend.png" alt="Click to see trends..." /></a></div>
+        </div>
     </j:forEach>
-    <div class="trend"><a href="${testResultsBean.getURL(pack)}/history">trend</a></div>
+    <div class="trend">
+    <a href="${testResultsBean.getURL(pack)}" title="Package detail"><img src="${rootURL}/plugin/h2o-dashboard/images/detail.png" alt="Click to see test details..." /></a>
+    <a href="${testResultsBean.getURL(pack)}/history" title="Package history"><img src="${rootURL}/plugin/h2o-dashboard/images/trend.png" alt="Click to see trends..." /></a>
+    </div>
   </div>  
   </j:forEach>
 </j:forEach>
