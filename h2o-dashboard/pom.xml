@@ -30,5 +30,10 @@
   		<artifactId>dashboard-view</artifactId>
   		<version>2.4</version>
   	</dependency>
+  	<dependency>
+  		<groupId>org.jenkins-ci.plugins</groupId>
+  		<artifactId>jquery</artifactId>
+  		<version>1.7.2-1</version>  		
+  	</dependency>
   </dependencies>
 </project>

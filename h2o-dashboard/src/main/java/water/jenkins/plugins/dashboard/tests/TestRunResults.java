@@ -18,9 +18,9 @@ public class TestRunResults {
   private ArrayList<PackageResult> packageResults = new ArrayList<PackageResult>();
   private HashMap<PackageResult, ArrayList<CaseResult>> caseResults = new HashMap<PackageResult, ArrayList<CaseResult>>(); 
   
-  private Job job;
-  private Run run;
-  private String testResultAction;
+  final private Job job;
+  final private Run run;
+  final private String testResultAction;
   
   public TestRunResults(final Run run, final String testResultAction) {
     this.run = run;
@@ -59,5 +59,13 @@ public class TestRunResults {
     sb.append(run.getUrl()).append(testResultAction).append(tr.getUrl());
     
     return sb.toString();
-  }    
+  }   
+  
+  public Run getRun() {
+    return this.run;
+  }
+  
+  public Job getJob() {
+    return this.job;
+  }
 }

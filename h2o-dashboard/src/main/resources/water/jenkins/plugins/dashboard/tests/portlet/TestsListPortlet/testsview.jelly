@@ -57,6 +57,9 @@ border-radius: .5em;
 box-shadow: 0 3px 6px rgba(0,0,0,.4);
 }
 
+.packageOk {
+}
+
 .packageFailed {
 border: solid 1px #d81b21;
 background: #f8dddd;
@@ -78,8 +81,12 @@ border: solid 1px #555;
 background: #6e6e6e;
 }
 
+.trendjob { 
+ position: absolute; left: 5px; top: 0px;
+}
+
 .trend { 
- position: absolute; right: 10px; top: 10px;
+ position: absolute; left: 10px; top: 10px;
 }
 
 .trendbt { 
@@ -88,15 +95,72 @@ background: #6e6e6e;
 
 .trend img { margin: 2px;}
 .trendbt img { margin: 2px;}
+.trendjob img { margin: 2px;}
+.trendjob span { margin: 2px;}
+
+.hide { display: none; }
+
+.jobView { position: relative; }
+
+.label {
+  display: inline-block;
+  padding: 2px 4px;
+  color: #fff;
+  font-weight: bold;
+}
+.labelFailed {
+ background-color: #d81b21;
+}
+.labelOk {
+ background-color: #009511;
+}
+
+.labelDisabled {
+ background-color: #ccc;
+}
+
 </style>
 
+<script>
+Q(function () {
+    Q("#tglFailedPack").bind("click", function () {
+        toggleFailed();        
+        Q(this).toggleClass("labelDisabled");
+    });
+    Q("#tglOkPack").bind("click", function () {
+        toggleOk();
+        Q(this).toggleClass("labelDisabled");
+    });
+    
+    function toggleOk() {
+        Q(".packageOk").toggleClass("hide");
+    }
+    
+    function toggleFailed() {
+        Q(".packageFailed").toggleClass("hide");
+    }
+    
+    function showAll(){
+    }
+});
+</script>
+
 <j:forEach var="job" items="${jobs}">
+<div class="jobView">    
   <j:set var="testResultsBean" value="${it.getJobTestLastRunResults(job)}" />
+  <div class="trendjob">
+  <a href="${testResultsBean.run.url}testReport/" title="Run details"><img src="${rootURL}/plugin/h2o-dashboard/images/detail.png" alt="Click to see run details..." /></a>
+  <a href="${testResultsBean.run.url}testReport/history" title="Run history"><img src="${rootURL}/plugin/h2o-dashboard/images/trend.png" alt="Click to see job trends..." /></a>
+  <span id="tglFailedPack" class="label labelFailed">Failed</span>
+  <span id="tglOkPack" class="label labelOk">Passed</span> 
+  </div>
+  <h3>${testResultsBean.run} (built ${testResultsBean.run.getTimestampString()} ago)</h3>
+  <img tooltip="${job.status}" src="${job.getBuildStatusUrl()}" class="icon32x32" alt="${job.status}" title="${job.status}" />
   <j:forEach var="pack" items="${testResultsBean.packages}">
   <j:choose>
   <j:when test="${pack.getFailCount()>0}"><j:set var="pclass" value="packageFailed" /></j:when>
-  <j:otherwise><j:set var="pclass" value="" /></j:otherwise>
-  </j:choose>
+  <j:otherwise><j:set var="pclass" value="packageOk" /></j:otherwise>
+  </j:choose>  
   <div class="${pclass} testpack rounded-corners clearfix">    
     <p><a href="${testResultsBean.getURL(pack)}" title="Package detail" >Test package ${pack.name}</a></p>   
     <j:forEach var="test" items="${testResultsBean.getCaseResults(pack)}">
@@ -107,9 +171,10 @@ background: #6e6e6e;
         </j:choose>
         <div class="test ${tclass}">
         <a href="${testResultsBean.getURL(test)}" title="Test detail">${test.name}</a>
-        <div class="trendbt">
-        <a href="${testResultsBean.getURL(test)}" title="Test detail"><img src="${rootURL}/plugin/h2o-dashboard/images/detail.png" alt="Click to see test details..." /></a>
-        <a href="${testResultsBean.getURL(test)}/history" title="Test history"><img src="${rootURL}/plugin/h2o-dashboard/images/trend.png" alt="Click to see trends..." /></a></div>
+            <div class="trendbt">
+                <a href="${testResultsBean.getURL(test)}" title="Test detail"><img src="${rootURL}/plugin/h2o-dashboard/images/detail.png" alt="Click to see test details..." /></a>
+                <a href="${testResultsBean.getURL(test)}/history" title="Test history"><img src="${rootURL}/plugin/h2o-dashboard/images/trend.png" alt="Click to see trends..." /></a>
+            </div>
         </div>
     </j:forEach>
     <div class="trend">
@@ -118,5 +183,6 @@ background: #6e6e6e;
     </div>
   </div>  
   </j:forEach>
+</div>
 </j:forEach>
 </j:jelly>
