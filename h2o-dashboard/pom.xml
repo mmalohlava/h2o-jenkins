@@ -40,7 +40,7 @@
 
    <scm>
        <connection>scm:git:git://github.com/mmalohlava/h2o-jenkins.git</connection>
-       <developerConnection>scm:git:git://github.com/mmalohlava/h2o-jenkins.git</developerConnection>
+       <developerConnection>scm:git:git@github.com:mmalohlava/h2o-jenkins.git</developerConnection>
         <url>http://github.com/mmalohlava/h2o-jenkins</url>
   </scm>
 </project>
