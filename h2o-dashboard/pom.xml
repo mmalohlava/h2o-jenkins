@@ -7,7 +7,7 @@
   </parent>
 
   <artifactId>h2o-dashboard</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
   <!-- get every artifact through repo.jenkins-ci.org, which proxies all the artifacts that we need -->
@@ -24,6 +24,7 @@
       <url>http://repo.jenkins-ci.org/public/</url>
     </pluginRepository>
   </pluginRepositories>
+
   <dependencies>
   	<dependency>
   		<groupId>org.jenkins-ci.plugins</groupId>
@@ -36,4 +37,10 @@
   		<version>1.7.2-1</version>  		
   	</dependency>
   </dependencies>
+
+   <scm>
+       <connection>scm:git:git://github.com/mmalohlava/h2o-jenkins.git</connection>
+       <developerConnection>scm:git:git://github.com/mmalohlava/h2o-jenkins.git</developerConnection>
+        <url>http://github.com/mmalohlava/h2o-jenkins</url>
+  </scm>
 </project>
