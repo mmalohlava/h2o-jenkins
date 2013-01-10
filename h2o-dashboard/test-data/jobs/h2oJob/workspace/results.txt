@@ -1,0 +1,793 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<result>
+  <suites>
+    <suite>
+      <file>/var/lib/jenkins/jobs/h2o.post.push/workspace/test-reports/nosetests-h2o.tests.junit.xml</file>
+      <name>nosetests</name>
+      <duration>943.8749</duration>
+      <cases>
+        <case>
+          <duration>24.001</duration>
+          <className>test_junit.TestJUnit</className>
+          <testName>testAll</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>12.572</duration>
+          <className>test_junit.TestJUnit</className>
+          <testName>testMore</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.108</duration>
+          <className>test.Basic</className>
+          <testName>test_A_Basic</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>2.679</duration>
+          <className>test.Basic</className>
+          <testName>test_B_RF_iris2</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>2.315</duration>
+          <className>test.Basic</className>
+          <testName>test_C_RF_poker100</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>2.434</duration>
+          <className>test.Basic</className>
+          <testName>test_D_GenParity1</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.566</duration>
+          <className>test_GLM_basic.Basic</className>
+          <testName>test_B_benign</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.47</duration>
+          <className>test_GLM_basic.Basic</className>
+          <testName>test_C_prostate</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>60.251</duration>
+          <className>test_GLM_big1.Basic</className>
+          <testName>test_C_hhp_107_01</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>296.645</duration>
+          <className>test_GLM_enum_explode_cols.Basic</className>
+          <testName>test_many_cols_with_syn</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>69.318</duration>
+          <className>test_GLM_hastie.Basic</className>
+          <testName>test_A_1mx10_hastie_10_2</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>131.926</duration>
+          <className>test_GLM_hastie_shuffle.Basic</className>
+          <testName>test_1mx10_hastie_10_2_cat_and_shuffle</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>212.981</duration>
+          <className>test_GLM_many_cols.Basic</className>
+          <testName>test_many_cols_with_syn</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.972</duration>
+          <className>test_GLM_trisum.Basic</className>
+          <testName>test_many_cols_with_syn</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>2.472</duration>
+          <className>test_badchars.Basic</className>
+          <testName>test_badchars</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>14.091</duration>
+          <className>test_parse_many_cases.Basic</className>
+          <testName>test_many_parse1</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>2.463</duration>
+          <className>test_parse_many_cases.Basic</className>
+          <testName>test_many_parse2</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>1.803</duration>
+          <className>test_parse_many_cases.Basic</className>
+          <testName>test_many_parse3</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>24.06</duration>
+          <className>test_put_parse4.Basic</className>
+          <testName>test_B_hhp_107_01_loop</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>5.182</duration>
+          <className>test_put_value5.Basic</className>
+          <testName>test1</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.095</duration>
+          <className>test_redirect.TestPoll</className>
+          <testName>test_redirect_poll_loop</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>0.0030</duration>
+          <className>test_rf1.Basic</className>
+          <testName>test_Basic</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>22.321</duration>
+          <className>test_rf1.Basic</className>
+          <testName>test_GenParity1</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>22.735</duration>
+          <className>test_rf_strata_rand1.Basic</className>
+          <testName>test_loop_random_param_poker1000</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>Traceback (most recent call last):
+  File &quot;/usr/lib/python2.7/unittest/case.py&quot;, line 327, in run
+    testMethod()
+  File &quot;/var/lib/jenkins/jobs/h2o.post.push/workspace/py/testdir_single_jvm/test_rf_strata_rand1.py&quot;, line 57, in test_loop_random_param_poker1000
+    h2o_cmd.runRF(timeoutSecs=20, csvPathname=csvPathname, **kwargs)
+  File &quot;py/h2o_cmd.py&quot;, line 84, in runRF
+    parseKey = parseFile(node, csvPathname, key, timeoutSecs=pto)
+  File &quot;py/h2o_cmd.py&quot;, line 14, in parseFile
+    return node.parse(put[&apos;key&apos;], myKey2, timeoutSecs=timeoutSecs, **kwargs)
+  File &quot;py/h2o.py&quot;, line 623, in parse
+    a = self.poll_url(a[&apos;response&apos;], timeoutSecs=timeoutSecs, retryDelaySecs=0.2)
+  File &quot;py/h2o.py&quot;, line 593, in poll_url
+    params=args))
+  File &quot;/usr/local/lib/python2.7/dist-packages/requests-0.14.2-py2.7.egg/requests/api.py&quot;, line 65, in get
+    return request(&apos;get&apos;, url, **kwargs)
+  File &quot;/usr/local/lib/python2.7/dist-packages/requests-0.14.2-py2.7.egg/requests/safe_mode.py&quot;, line 39, in wrapped
+    return function(method, url, **kwargs)
+  File &quot;/usr/local/lib/python2.7/dist-packages/requests-0.14.2-py2.7.egg/requests/api.py&quot;, line 51, in request
+    return session.request(method=method, url=url, **kwargs)
+  File &quot;/usr/local/lib/python2.7/dist-packages/requests-0.14.2-py2.7.egg/requests/sessions.py&quot;, line 241, in request
+    r.send(prefetch=prefetch)
+  File &quot;/usr/local/lib/python2.7/dist-packages/requests-0.14.2-py2.7.egg/requests/models.py&quot;, line 637, in send
+    raise ConnectionError(e)
+ConnectionError: HTTPConnectionPool(host=&apos;10.6.101.162&apos;, port=54323): Max retries exceeded with url: /ParseProgress?destination_key=41bc835f-5f2a-45d8-855d-41d2c083087e.hex
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Cloud.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Cloud.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Cloud.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Cloud.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=34c388d2-4030-4f95-ab28-9ba489eebe22.hex&amp;source_key=34c388d2-4030-4f95-ab28-9ba489eebe22 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=34c388d2-4030-4f95-ab28-9ba489eebe22.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=34c388d2-4030-4f95-ab28-9ba489eebe22.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?depth=30&amp;modelKey=pytest_model&amp;Key=34c388d2-4030-4f95-ab28-9ba489eebe22.hex&amp;ntree=5&amp;stratify=1&amp;strata=0%3A0%2C1%3A0%2C2%3A0%2C3%3A0%2C4%3A0%2C5%3A0%2C6%3A0%2C7%3A0%2C8%3A0%2C9%3A0 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=34c388d2-4030-4f95-ab28-9ba489eebe22.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=34c388d2-4030-4f95-ab28-9ba489eebe22.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=34c388d2-4030-4f95-ab28-9ba489eebe22.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%2834c388d2-4030-4f95-ab28-9ba489eebe22.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=34c388d2-4030-4f95-ab28-9ba489eebe22.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex&amp;source_key=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?stratify=1&amp;depth=30&amp;modelKey=pytest_model&amp;Key=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%280b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=43626340-a147-4e6c-838a-5df8e30d83be.hex&amp;source_key=43626340-a147-4e6c-838a-5df8e30d83be HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=43626340-a147-4e6c-838a-5df8e30d83be.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=43626340-a147-4e6c-838a-5df8e30d83be.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?depth=30&amp;modelKey=pytest_model&amp;strata=0%3A7%2C2%3A3&amp;Key=43626340-a147-4e6c-838a-5df8e30d83be.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=43626340-a147-4e6c-838a-5df8e30d83be.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=43626340-a147-4e6c-838a-5df8e30d83be.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=43626340-a147-4e6c-838a-5df8e30d83be.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%2843626340-a147-4e6c-838a-5df8e30d83be.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=43626340-a147-4e6c-838a-5df8e30d83be.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex&amp;source_key=4ef81e01-e5a8-4d00-b748-f02028aaf22b HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?stratify=1&amp;depth=30&amp;modelKey=pytest_model&amp;Key=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%284ef81e01-e5a8-4d00-b748-f02028aaf22b.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex&amp;source_key=f7a1d805-bc71-4658-a0b2-5b657fdd2a08 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?depth=30&amp;modelKey=pytest_model&amp;strata=0%3A1%2C1%3A1%2C2%3A1%2C3%3A1%2C4%3A1%2C5%3A1%2C6%3A1%2C7%3A1%2C8%3A1%2C9%3A1&amp;Key=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%28f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex&amp;source_key=585d3e20-3227-43b3-86b9-f4e17f2469ed HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?depth=30&amp;modelKey=pytest_model&amp;strata=0%3A100%2C1%3A100%2C2%3A100%2C3%3A100%2C4%3A100%2C5%3A100%2C6%3A100%2C7%3A100%2C8%3A100%2C9%3A100&amp;Key=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%28585d3e20-3227-43b3-86b9-f4e17f2469ed.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=987753df-0e12-4804-a588-6754f136fcbf.hex&amp;source_key=987753df-0e12-4804-a588-6754f136fcbf HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=987753df-0e12-4804-a588-6754f136fcbf.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=987753df-0e12-4804-a588-6754f136fcbf.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?stratify=1&amp;depth=30&amp;modelKey=pytest_model&amp;Key=987753df-0e12-4804-a588-6754f136fcbf.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=987753df-0e12-4804-a588-6754f136fcbf.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=987753df-0e12-4804-a588-6754f136fcbf.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=987753df-0e12-4804-a588-6754f136fcbf.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%28987753df-0e12-4804-a588-6754f136fcbf.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=987753df-0e12-4804-a588-6754f136fcbf.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=5119d547-9d13-40cc-a08a-695af6d4a601.hex&amp;source_key=5119d547-9d13-40cc-a08a-695af6d4a601 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=5119d547-9d13-40cc-a08a-695af6d4a601.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=5119d547-9d13-40cc-a08a-695af6d4a601.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?stratify=1&amp;depth=30&amp;modelKey=pytest_model&amp;Key=5119d547-9d13-40cc-a08a-695af6d4a601.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=5119d547-9d13-40cc-a08a-695af6d4a601.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=5119d547-9d13-40cc-a08a-695af6d4a601.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=5119d547-9d13-40cc-a08a-695af6d4a601.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%285119d547-9d13-40cc-a08a-695af6d4a601.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=5119d547-9d13-40cc-a08a-695af6d4a601.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=a10c50d8-7d60-4450-8471-27128d86cf33.hex&amp;source_key=a10c50d8-7d60-4450-8471-27128d86cf33 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=a10c50d8-7d60-4450-8471-27128d86cf33.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=a10c50d8-7d60-4450-8471-27128d86cf33.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?depth=30&amp;modelKey=pytest_model&amp;strata=0%3A1%2C1%3A1%2C2%3A1%2C3%3A1%2C4%3A1%2C5%3A1%2C6%3A1%2C7%3A1%2C8%3A1%2C9%3A1&amp;Key=a10c50d8-7d60-4450-8471-27128d86cf33.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=a10c50d8-7d60-4450-8471-27128d86cf33.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=a10c50d8-7d60-4450-8471-27128d86cf33.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=a10c50d8-7d60-4450-8471-27128d86cf33.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%28a10c50d8-7d60-4450-8471-27128d86cf33.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=a10c50d8-7d60-4450-8471-27128d86cf33.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex&amp;source_key=d81c70f3-a2d6-4314-87bf-91ec57314cad HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?stratify=1&amp;depth=30&amp;modelKey=pytest_model&amp;Key=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%28d81c70f3-a2d6-4314-87bf-91ec57314cad.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=41bc835f-5f2a-45d8-855d-41d2c083087e.hex&amp;source_key=41bc835f-5f2a-45d8-855d-41d2c083087e HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: WARNING: Retrying (0 attempts remain) after connection broken by &apos;BadStatusLine(&quot;&apos;&apos;&quot;,)&apos;: /ParseProgress?destination_key=41bc835f-5f2a-45d8-855d-41d2c083087e.hex
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------
+</errorStackTrace>
+          <errorDetails>HTTPConnectionPool(host=&apos;10.6.101.162&apos;, port=54323): Max retries exceeded with url: /ParseProgress?destination_key=41bc835f-5f2a-45d8-855d-41d2c083087e.hex
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Cloud.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Cloud.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Cloud.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Cloud.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=34c388d2-4030-4f95-ab28-9ba489eebe22.hex&amp;source_key=34c388d2-4030-4f95-ab28-9ba489eebe22 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=34c388d2-4030-4f95-ab28-9ba489eebe22.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=34c388d2-4030-4f95-ab28-9ba489eebe22.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?depth=30&amp;modelKey=pytest_model&amp;Key=34c388d2-4030-4f95-ab28-9ba489eebe22.hex&amp;ntree=5&amp;stratify=1&amp;strata=0%3A0%2C1%3A0%2C2%3A0%2C3%3A0%2C4%3A0%2C5%3A0%2C6%3A0%2C7%3A0%2C8%3A0%2C9%3A0 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=34c388d2-4030-4f95-ab28-9ba489eebe22.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=34c388d2-4030-4f95-ab28-9ba489eebe22.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=34c388d2-4030-4f95-ab28-9ba489eebe22.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%2834c388d2-4030-4f95-ab28-9ba489eebe22.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=34c388d2-4030-4f95-ab28-9ba489eebe22.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex&amp;source_key=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?stratify=1&amp;depth=30&amp;modelKey=pytest_model&amp;Key=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%280b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=0b2b37ae-b1a5-4b7c-a1ef-3c5dd8056e32.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=43626340-a147-4e6c-838a-5df8e30d83be.hex&amp;source_key=43626340-a147-4e6c-838a-5df8e30d83be HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=43626340-a147-4e6c-838a-5df8e30d83be.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=43626340-a147-4e6c-838a-5df8e30d83be.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?depth=30&amp;modelKey=pytest_model&amp;strata=0%3A7%2C2%3A3&amp;Key=43626340-a147-4e6c-838a-5df8e30d83be.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=43626340-a147-4e6c-838a-5df8e30d83be.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=43626340-a147-4e6c-838a-5df8e30d83be.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=43626340-a147-4e6c-838a-5df8e30d83be.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%2843626340-a147-4e6c-838a-5df8e30d83be.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=43626340-a147-4e6c-838a-5df8e30d83be.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex&amp;source_key=4ef81e01-e5a8-4d00-b748-f02028aaf22b HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?stratify=1&amp;depth=30&amp;modelKey=pytest_model&amp;Key=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%284ef81e01-e5a8-4d00-b748-f02028aaf22b.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=4ef81e01-e5a8-4d00-b748-f02028aaf22b.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex&amp;source_key=f7a1d805-bc71-4658-a0b2-5b657fdd2a08 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?depth=30&amp;modelKey=pytest_model&amp;strata=0%3A1%2C1%3A1%2C2%3A1%2C3%3A1%2C4%3A1%2C5%3A1%2C6%3A1%2C7%3A1%2C8%3A1%2C9%3A1&amp;Key=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%28f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=f7a1d805-bc71-4658-a0b2-5b657fdd2a08.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex&amp;source_key=585d3e20-3227-43b3-86b9-f4e17f2469ed HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?depth=30&amp;modelKey=pytest_model&amp;strata=0%3A100%2C1%3A100%2C2%3A100%2C3%3A100%2C4%3A100%2C5%3A100%2C6%3A100%2C7%3A100%2C8%3A100%2C9%3A100&amp;Key=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%28585d3e20-3227-43b3-86b9-f4e17f2469ed.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=585d3e20-3227-43b3-86b9-f4e17f2469ed.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=987753df-0e12-4804-a588-6754f136fcbf.hex&amp;source_key=987753df-0e12-4804-a588-6754f136fcbf HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=987753df-0e12-4804-a588-6754f136fcbf.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=987753df-0e12-4804-a588-6754f136fcbf.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?stratify=1&amp;depth=30&amp;modelKey=pytest_model&amp;Key=987753df-0e12-4804-a588-6754f136fcbf.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=987753df-0e12-4804-a588-6754f136fcbf.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=987753df-0e12-4804-a588-6754f136fcbf.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=987753df-0e12-4804-a588-6754f136fcbf.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%28987753df-0e12-4804-a588-6754f136fcbf.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=987753df-0e12-4804-a588-6754f136fcbf.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=5119d547-9d13-40cc-a08a-695af6d4a601.hex&amp;source_key=5119d547-9d13-40cc-a08a-695af6d4a601 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=5119d547-9d13-40cc-a08a-695af6d4a601.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=5119d547-9d13-40cc-a08a-695af6d4a601.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?stratify=1&amp;depth=30&amp;modelKey=pytest_model&amp;Key=5119d547-9d13-40cc-a08a-695af6d4a601.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=5119d547-9d13-40cc-a08a-695af6d4a601.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=5119d547-9d13-40cc-a08a-695af6d4a601.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=5119d547-9d13-40cc-a08a-695af6d4a601.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%285119d547-9d13-40cc-a08a-695af6d4a601.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=5119d547-9d13-40cc-a08a-695af6d4a601.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=a10c50d8-7d60-4450-8471-27128d86cf33.hex&amp;source_key=a10c50d8-7d60-4450-8471-27128d86cf33 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=a10c50d8-7d60-4450-8471-27128d86cf33.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=a10c50d8-7d60-4450-8471-27128d86cf33.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?depth=30&amp;modelKey=pytest_model&amp;strata=0%3A1%2C1%3A1%2C2%3A1%2C3%3A1%2C4%3A1%2C5%3A1%2C6%3A1%2C7%3A1%2C8%3A1%2C9%3A1&amp;Key=a10c50d8-7d60-4450-8471-27128d86cf33.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=a10c50d8-7d60-4450-8471-27128d86cf33.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=a10c50d8-7d60-4450-8471-27128d86cf33.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=a10c50d8-7d60-4450-8471-27128d86cf33.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%28a10c50d8-7d60-4450-8471-27128d86cf33.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=a10c50d8-7d60-4450-8471-27128d86cf33.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex&amp;source_key=d81c70f3-a2d6-4314-87bf-91ec57314cad HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /ParseProgress?destination_key=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RF.json?stratify=1&amp;depth=30&amp;modelKey=pytest_model&amp;Key=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex&amp;ntree=5 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /RFView.json?dataKey=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex&amp;modelKey=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=ConfusionMatrix+of+%28d81c70f3-a2d6-4314-87bf-91ec57314cad.hex%5B10%5D%2Cpytest_model%5B5%5D%2C0%29 HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=pytest_model HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Inspect.json?key=d81c70f3-a2d6-4314-87bf-91ec57314cad.hex HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /WWWFileUpload.json HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;POST /Upload.json HTTP/1.1&quot; 200 129
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Parse.json?destination_key=41bc835f-5f2a-45d8-855d-41d2c083087e.hex&amp;source_key=41bc835f-5f2a-45d8-855d-41d2c083087e HTTP/1.1&quot; 200 None
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: WARNING: Retrying (0 attempts remain) after connection broken by &apos;BadStatusLine(&quot;&apos;&apos;&quot;,)&apos;: /ParseProgress?destination_key=41bc835f-5f2a-45d8-855d-41d2c083087e.hex
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</errorDetails>
+          <failedSince>270</failedSince>
+        </case>
+        <case>
+          <duration>23.755</duration>
+          <className>&lt;nose.suite</className>
+          <testName>ContextSuite context=Basic&gt;:teardown</testName>
+          <skipped>false</skipped>
+          <errorStackTrace>Traceback (most recent call last):
+  File &quot;/usr/lib/python2.7/dist-packages/nose/suite.py&quot;, line 227, in run
+    self.tearDown()
+  File &quot;/usr/lib/python2.7/dist-packages/nose/suite.py&quot;, line 350, in tearDown
+    self.teardownContext(ancestor)
+  File &quot;/usr/lib/python2.7/dist-packages/nose/suite.py&quot;, line 366, in teardownContext
+    try_run(context, names)
+  File &quot;/usr/lib/python2.7/dist-packages/nose/util.py&quot;, line 478, in try_run
+    return func()
+  File &quot;/var/lib/jenkins/jobs/h2o.post.push/workspace/py/testdir_single_jvm/test_rf_strata_rand1.py&quot;, line 32, in tearDownClass
+    h2o.tear_down_cloud()
+  File &quot;py/h2o.py&quot;, line 416, in tear_down_cloud
+    &quot;Could have occured at any prior time&quot;)
+Exception: tear_down_cloud: Errors in sandbox stdout or stderr.Could have occured at any prior time
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Shutdown.json HTTP/1.1&quot; 200 None
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------
+</errorStackTrace>
+          <errorDetails>tear_down_cloud: Errors in sandbox stdout or stderr.Could have occured at any prior time
+-------------------- &gt;&gt; begin captured logging &lt;&lt; --------------------
+requests.packages.urllib3.connectionpool: INFO: Starting new HTTP connection (1): 10.6.101.162
+requests.packages.urllib3.connectionpool: DEBUG: &quot;GET /Shutdown.json HTTP/1.1&quot; 200 None
+--------------------- &gt;&gt; end captured logging &lt;&lt; ---------------------</errorDetails>
+          <failedSince>270</failedSince>
+        </case>
+        <case>
+          <duration>2.612</duration>
+          <className>test_simple.Basic</className>
+          <testName>test_RF_poker_1m_rf</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+        <case>
+          <duration>5.045</duration>
+          <className>test_tnc3.Basic</className>
+          <testName>test_tnc3_ignore</testName>
+          <skipped>false</skipped>
+          <failedSince>0</failedSince>
+        </case>
+      </cases>
+    </suite>
+  </suites>
+  <duration>943.8749</duration>
+  <keepLongStdio>true</keepLongStdio>
+</result>
