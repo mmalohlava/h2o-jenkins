@@ -1,0 +1,140 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:dp="/hudson/plugins/view/dashboard">
+<style scoped="scoped">
+a:link {text-decoration:none; color: inherit;}
+a:visited {text-decoration:none; color: inherit;}
+a:hover {text-decoration:none; color: inherit;}
+a:active {text-decoration:none; color: inherit;}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.rounded-corners {
+-webkit-border-radius: .5em;
+-moz-border-radius: .5em;
+border-radius: .5em;
+}
+
+.testpack {
+margin: 1.3%;
+width: 90%;
+height: auto;
+padding: 4px;
+border: 1px solid #444;
+position: relative;
+}
+
+.testpack p {
+font-size: 1.5em;
+margin: 0px;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+-o-text-overflow: ellipsis;
+}
+
+.test {
+color: white;
+font-size: 0.8em;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+-o-text-overflow: ellipsis;
+text-align: left;
+margin: 0.3%;
+float: left;
+width: 31%;
+height: 11px;
+padding: 5px;
+position: relative;
+
+border-radius: .5em;
+-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.4);
+-moz-box-shadow: 0 3px 6px rgba(0,0,0,.4);
+box-shadow: 0 3px 6px rgba(0,0,0,.4);
+}
+
+.test span {
+display: inline-block;
+}
+
+.packageOk {
+}
+
+.packageFailed {
+border: solid 1px #d81b21;
+background: #f8dddd;
+}
+
+.testOk {
+border: solid 1px #007600;
+background: #009511;
+}
+
+.testFailed {
+border: solid 1px #980c10;
+background: #d81b21;
+}
+
+
+.testSkipped {
+border: solid 1px #555;
+background: #6e6e6e;
+}
+
+.trendjob { 
+ position: absolute; left: 5px; top: 0px;
+}
+
+.trend { 
+ position: absolute; left: 10px; top: 5px;
+}
+
+.trendbt { 
+ position: absolute; right: 10px; bottom: 0px;
+}
+
+.trend img { margin: 2px;}
+.trendbt img { margin: 2px;}
+.trendjob img { margin: 2px;}
+.trendjob span { margin: 2px;}
+
+.hide { display: none; }
+
+.jobView { position: relative; }
+
+.label {
+  display: inline-block;
+  padding: 2px 4px;
+  color: #fff;
+  font-weight: bold;
+}
+.labelFailed {
+ background-color: #d81b21;
+}
+.labelOk {
+ background-color: #009511;
+}
+
+.labelDisabled {
+ background-color: #ccc;
+}
+
+.w100 { width: 100px; }
+.w40 { width: 40px; }
+.w30 { width: 30px; }
+.w20 { width: 20px; }
+.lm20 { margin: 0 0 20px 0 ; }
+
+.nooverflow {
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+-o-text-overflow: ellipsis;
+}
+</style>
+</j:jelly>

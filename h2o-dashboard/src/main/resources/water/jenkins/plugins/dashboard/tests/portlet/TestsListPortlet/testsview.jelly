@@ -1,126 +1,5 @@
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:dp="/hudson/plugins/view/dashboard">
-<style scoped="scoped">
-a:link {text-decoration:none; color: inherit;}
-a:visited {text-decoration:none; color: inherit;}
-a:hover {text-decoration:none; color: inherit;}
-a:active {text-decoration:none; color: inherit;}
-
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}
-
-.rounded-corners {
--webkit-border-radius: .5em;
--moz-border-radius: .5em;
-border-radius: .5em;
-}
-
-.testpack {
-margin: 1.3%;
-width: 90%;
-height: auto;
-padding: 10px;
-border: 1px solid #444;
-position: relative;
-}
-
-.testpack p {
-font-size: 2em;
-margin: 0px;
-overflow: hidden;
-white-space: nowrap;
-text-overflow: ellipsis;
--o-text-overflow: ellipsis;
-}
-
-.test {
-color: white;
-font-size: 1.1em;
-overflow: hidden;
-white-space: nowrap;
-text-overflow: ellipsis;
--o-text-overflow: ellipsis;
-float: left;
-margin: 1.2%;
-width: 160px;
-height: 40px;
-padding: 10px;
-position: relative;
-
-border-radius: .5em;
--webkit-box-shadow: 0 3px 6px rgba(0,0,0,.4);
--moz-box-shadow: 0 3px 6px rgba(0,0,0,.4);
-box-shadow: 0 3px 6px rgba(0,0,0,.4);
-}
-
-.packageOk {
-}
-
-.packageFailed {
-border: solid 1px #d81b21;
-background: #f8dddd;
-}
-
-.testOk {
-border: solid 1px #007600;
-background: #009511;
-}
-
-.testFailed {
-border: solid 1px #980c10;
-background: #d81b21;
-}
-
-
-.testSkipped {
-border: solid 1px #555;
-background: #6e6e6e;
-}
-
-.trendjob { 
- position: absolute; left: 5px; top: 0px;
-}
-
-.trend { 
- position: absolute; left: 10px; top: 10px;
-}
-
-.trendbt { 
- position: absolute; right: 10px; bottom: 10px;
-}
-
-.trend img { margin: 2px;}
-.trendbt img { margin: 2px;}
-.trendjob img { margin: 2px;}
-.trendjob span { margin: 2px;}
-
-.hide { display: none; }
-
-.jobView { position: relative; }
-
-.label {
-  display: inline-block;
-  padding: 2px 4px;
-  color: #fff;
-  font-weight: bold;
-}
-.labelFailed {
- background-color: #d81b21;
-}
-.labelOk {
- background-color: #009511;
-}
-
-.labelDisabled {
- background-color: #ccc;
-}
-
-</style>
-
+<st:include page="tablecss.jelly"/>
 <script>
 Q(function () {
     Q("#tglFailedPack").bind("click", function () {
@@ -154,8 +33,7 @@ Q(function () {
   <span id="tglFailedPack" class="label labelFailed">Failed</span>
   <span id="tglOkPack" class="label labelOk">Passed</span> 
   </div>
-  <h3>${testResultsBean.run} (built ${testResultsBean.run.getTimestampString()} ago)</h3>
-  <img tooltip="${job.status}" src="${job.getBuildStatusUrl()}" class="icon32x32" alt="${job.status}" title="${job.status}" />
+  <h3><img tooltip="${job.status}" src="${testResultsBean.run.url}buildStatus" class="icon32x32" alt="${job.status}" title="${job.status}" />${testResultsBean.run} (built ${testResultsBean.run.getTimestampString()} ago)</h3> 
   <j:forEach var="pack" items="${testResultsBean.packages}">
   <j:choose>
   <j:when test="${pack.getFailCount()>0}"><j:set var="pclass" value="packageFailed" /></j:when>
@@ -170,7 +48,10 @@ Q(function () {
         <j:otherwise><j:set var="tclass" value="testFailed" /></j:otherwise>
         </j:choose>
         <div class="test ${tclass}">
-        <a href="${testResultsBean.getURL(test)}" title="Test detail">${test.name}</a>
+        <span class="w100 nooverflow"><a href="${testResultsBean.getURL(test)}" title="Test detail">${test.name}</a></span>|
+        <span class="w40">${test.duration} ms</span>|
+        <span class="w40">${test.passCount}x OK</span>|
+        <span class="w40">${test.failCount}x FAILED</span>
             <div class="trendbt">
                 <a href="${testResultsBean.getURL(test)}" title="Test detail"><img src="${rootURL}/plugin/h2o-dashboard/images/detail.png" alt="Click to see test details..." /></a>
                 <a href="${testResultsBean.getURL(test)}/history" title="Test history"><img src="${rootURL}/plugin/h2o-dashboard/images/trend.png" alt="Click to see trends..." /></a>
