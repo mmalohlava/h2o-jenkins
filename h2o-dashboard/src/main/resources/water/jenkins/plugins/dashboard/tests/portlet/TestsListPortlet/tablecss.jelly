@@ -47,9 +47,9 @@ text-overflow: ellipsis;
 text-align: left;
 margin: 0.3%;
 float: left;
-width: 31%;
+width: 28%;
 height: 11px;
-padding: 5px;
+padding: 5px 35px 5px 10px;
 position: relative;
 
 border-radius: .5em;
@@ -124,7 +124,16 @@ background: #6e6e6e;
  background-color: #ccc;
 }
 
+.tright {
+    text-align: right;
+}
+
+.w90per { width: 90%; }
+.w60per { width: 60%; }
 .w100 { width: 100px; }
+.w80 { width: 80px; }
+.w70 { width: 70px; }
+.w60 { width: 60px; }
 .w40 { width: 40px; }
 .w30 { width: 30px; }
 .w20 { width: 20px; }

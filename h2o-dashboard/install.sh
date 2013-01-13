@@ -3,7 +3,7 @@
 # @Last Change: 24-Dez-2004.
 # @Revision:    0.0
 
-mvn release:prepare
+#mvn release:prepare
 #mvn versions:set -DnewVersion=1.0.1-SNAPSHOT
 #mvn install -Dmaven.test.skip=true
 

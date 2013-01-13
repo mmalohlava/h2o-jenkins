@@ -33,7 +33,11 @@ Q(function () {
   <span id="tglFailedPack" class="label labelFailed">Failed</span>
   <span id="tglOkPack" class="label labelOk">Passed</span> 
   </div>
-  <h3><img tooltip="${job.status}" src="${testResultsBean.run.url}buildStatus" class="icon32x32" alt="${job.status}" title="${job.status}" />${testResultsBean.run} (built ${testResultsBean.run.getTimestampString()} ago)</h3> 
+  <h3>
+  <img tooltip="${job.status}" src="${testResultsBean.run.url}buildStatus" class="icon32x32" alt="${job.status}" title="${job.status}" /> ${testResultsBean.run} (built ${testResultsBean.run.getTimestampString()} ago) 
+  ${testResultsBean.passCount} <img src="${rootURL}/plugin/h2o-dashboard/images/icon-ok.png" alt="OK" />
+  ${testResultsBean.failCount} <img src="${rootURL}/plugin/h2o-dashboard/images/icon-ko.png" alt="KO" />
+  </h3> 
   <j:forEach var="pack" items="${testResultsBean.packages}">
   <j:choose>
   <j:when test="${pack.getFailCount()>0}"><j:set var="pclass" value="packageFailed" /></j:when>
@@ -48,10 +52,11 @@ Q(function () {
         <j:otherwise><j:set var="tclass" value="testFailed" /></j:otherwise>
         </j:choose>
         <div class="test ${tclass}">
-        <span class="w100 nooverflow"><a href="${testResultsBean.getURL(test)}" title="Test detail">${test.name}</a></span>|
-        <span class="w40">${test.duration} ms</span>|
-        <span class="w40">${test.passCount}x OK</span>|
-        <span class="w40">${test.failCount}x FAILED</span>
+        <a href="${testResultsBean.getURL(test)}" title="Test detail">
+        <span class="w60per nooverflow">${test.name}</span>
+        <span class="w40 tright">${test.passCount} <img src="${rootURL}/plugin/h2o-dashboard/images/icon-ok.png" alt="OK" /></span>
+        <span class="w40 tright">${test.failCount} <img src="${rootURL}/plugin/h2o-dashboard/images/icon-ko.png" alt="KO" /></span>        
+        </a>
             <div class="trendbt">
                 <a href="${testResultsBean.getURL(test)}" title="Test detail"><img src="${rootURL}/plugin/h2o-dashboard/images/detail.png" alt="Click to see test details..." /></a>
                 <a href="${testResultsBean.getURL(test)}/history" title="Test history"><img src="${rootURL}/plugin/h2o-dashboard/images/trend.png" alt="Click to see trends..." /></a>
