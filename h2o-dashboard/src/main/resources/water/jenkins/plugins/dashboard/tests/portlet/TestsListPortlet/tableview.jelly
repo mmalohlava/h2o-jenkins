@@ -44,7 +44,6 @@ Q(function () {
   <div class="table w98per nooverflow">        
    
    <div class="trow nooverflow">
-   <span class="w60 tcell testHeader">Release</span>
    <j:set var="ix" value="${MAX}" />
    <j:set var="rx" value="${testResultsBean.run}" />
    <j:while test="${ix!=0}">
@@ -53,25 +52,24 @@ Q(function () {
               <j:otherwise><j:set var="rnum" value="#${rx.number}" /></j:otherwise>
           </j:choose>
           <span class="w20 tcell testHeader">${rnum}</span>
-          <j:set var="rx" value="${rx.previousBuild}" />
           <j:set var="ix" value="${ix-1}" />
+          <j:set var="rx" value="${testResultsBean.job.getBuildByNumber(ix)}" />
    </j:while>
    </div>
    
    <div class="trow nooverflow">
-   <span class="w60 tcell"></span>
    <j:set var="ix" value="${MAX}" />
    <j:set var="rx" value="${testResultsBean.run}" />
    <j:while test="${ix!=0}">
      <span class="w20 tcell tsave">
      <j:choose>
-       <j:when test="${rx == null}"> </j:when>
+       <j:when test="${rx == null}"><st:nbsp/></j:when>
        <j:otherwise>
        <a href="${testResultsBean.getRunArtifactURL(rx)}"><img src="${rootURL}/plugin/h2o-dashboard/images/save.png" alt="Download not" /></a></j:otherwise>
      </j:choose>
      </span>
-     <j:set var="rx" value="${rx.previousBuild}" />
      <j:set var="ix" value="${ix-1}" />
+     <j:set var="rx" value="${testResultsBean.job.getBuildByNumber(ix)}" />
     </j:while>
    </div>
    
@@ -126,9 +124,9 @@ Q(function () {
             </j:choose>
             <j:choose>
               <j:when test="${tx == null}">
-              <span class="w20 tcell ${tclass}">.</span></j:when>
+              <span class="w20 tcell ${tclass}"><st:nbsp/></span></j:when>
               <j:otherwise><a href="${testResultsBean.getURL(tx)}" title="Test details">
-              <span class="w20 tcell ${tclass}">.</span>
+              <span class="w20 tcell ${tclass}"><st:nbsp/></span>
               </a></j:otherwise>
             </j:choose>
             
