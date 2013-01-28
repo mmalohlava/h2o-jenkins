@@ -96,7 +96,7 @@ public class TestRunResults {
   }
   
   public int getMaxNumBuilds(int max) {
-    return Math.min(run.getNumber(), max);    
+    return run != null ? Math.min(run.getNumber(), max) : max;
   }
   
   public String getRunArtifactURL(final Run run) {
