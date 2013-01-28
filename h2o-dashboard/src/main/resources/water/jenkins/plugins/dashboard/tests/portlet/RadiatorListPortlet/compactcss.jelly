@@ -5,23 +5,61 @@ a:visited {text-decoration:none; color: inherit;}
 a:hover {text-decoration:none; color: inherit;}
 a:active {text-decoration:none; color: inherit;}
 
-.package {
-margin: 1.2%;
-width: 95%;
-height: auto;
-padding: 2px;
-border: 1px solid #444;
-position: relative;
-text-align: left;
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
-.package p {
-font-size: 1.4em;
-margin: 2px;
+.rounded-corners {
+-webkit-border-radius: .5em;
+-moz-border-radius: .5em;
+border-radius: .5em;
+}
+
+.testpack {
+margin: 1.3%;
+width: 90%;
+height: auto;
+padding: 4px;
+border: 1px solid #444;
+position: relative;
+}
+
+.testpack p {
+font-size: 1.5em;
+margin: 0px;
 overflow: hidden;
 white-space: nowrap;
 text-overflow: ellipsis;
 -o-text-overflow: ellipsis;
+}
+
+.test {
+color: white;
+font-size: 0.8em;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+-o-text-overflow: ellipsis;
+text-align: left;
+margin: 0.3%;
+float: left;
+width: 28%;
+height: 11px;
+padding: 5px 35px 5px 10px;
+position: relative;
+
+border-radius: .5em;
+-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.4);
+-moz-box-shadow: 0 3px 6px rgba(0,0,0,.4);
+box-shadow: 0 3px 6px rgba(0,0,0,.4);
+}
+
+.test span {
+display: inline-block;
 }
 
 .packageOk {
@@ -42,43 +80,10 @@ border: solid 1px #980c10;
 background: #d81b21;
 }
 
-.table {
- margin: 5px 0 5px 5px ;
-}
-
-.theader {
- font-size: 0.6em;
-}
-
-.trow {
- margin: 0;
- padding: 0;
-}
-
-.tcell {
-    display:inline-block;
-    margin: 1px 0 0 1px;
-    vertical-align: bottom;
-}
-
-.tsave {
- border: solid 1px #fff;
-}
-
-.testHeader {
-border: solid 1px #555;
-background: #ccc;
-text-align: center;
-}
 
 .testSkipped {
 border: solid 1px #555;
 background: #6e6e6e;
-}
-
-.testDisabled {
-border: solid 1px #555;
-background: #888;
 }
 
 .trendjob { 
@@ -86,7 +91,7 @@ background: #888;
 }
 
 .trend { 
- margin: 2px;
+ position: absolute; left: 10px; top: 5px;
 }
 
 .trendbt { 
@@ -108,40 +113,31 @@ background: #888;
   color: #fff;
   font-weight: bold;
 }
-.labelFailed { background-color: #d81b21; }
-.labelOk { background-color: #009511; }
-.labelDisabled { background-color: #ccc; }
-
-.tright { text-align: right; }
-
-.clearfix:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
+.labelFailed {
+ background-color: #d81b21;
+}
+.labelOk {
+ background-color: #009511;
 }
 
-.rounded-corners {
--webkit-border-radius: .5em;
--moz-border-radius: .5em;
-border-radius: .5em;
+.labelDisabled {
+ background-color: #ccc;
 }
 
-.w98per { width: 98%;   }
-.w90per { width: 90%;   }
-.w60per { width: 60%;   }
-.w120   { width: 120px; }
-.w100   { width: 100px; }
-.w80    { width: 80px;  }
-.w70    { width: 70px;  }
-.w60    { width: 60px;  }
-.w40    { width: 40px;  }
-.w30    { width: 30px;  }
-.w25    { width: 25px;  }
-.w20    { width: 20px;  }
-.w10    { width: 10px;  }
-.lm20   { margin: 0 0 20px 0 ; }
+.tright {
+    text-align: right;
+}
+
+.w90per { width: 90%; }
+.w60per { width: 60%; }
+.w100 { width: 100px; }
+.w80 { width: 80px; }
+.w70 { width: 70px; }
+.w60 { width: 60px; }
+.w40 { width: 40px; }
+.w30 { width: 30px; }
+.w20 { width: 20px; }
+.lm20 { margin: 0 0 20px 0 ; }
 
 .nooverflow {
 overflow: hidden;
@@ -149,6 +145,5 @@ white-space: nowrap;
 text-overflow: ellipsis;
 -o-text-overflow: ellipsis;
 }
-
 </style>
 </j:jelly>

@@ -2,7 +2,7 @@
   <dp:decorate portlet="${it}">
     <tr><td>
       <div align="center">
-          <st:include page="tableview.jelly"/>
+          <st:include page="radiatorview.jelly"/>
       </div>
      </td></tr>
   </dp:decorate>

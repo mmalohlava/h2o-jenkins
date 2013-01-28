@@ -1,5 +1,5 @@
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:dp="/hudson/plugins/view/dashboard">
-<st:include page="tablecss.jelly"/>
+<st:include page="compactcss.jelly"/>
 <script>
 Q(function () {
     Q("#tglFailedPack").bind("click", function () {

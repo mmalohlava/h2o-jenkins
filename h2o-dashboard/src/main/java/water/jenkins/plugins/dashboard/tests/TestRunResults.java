@@ -2,6 +2,7 @@ package water.jenkins.plugins.dashboard.tests;
 
 import hudson.model.Job;
 import hudson.model.Run;
+import hudson.model.Run.Artifact;
 import hudson.tasks.junit.PackageResult;
 import hudson.tasks.junit.CaseResult;
 import hudson.tasks.test.TestResult;
@@ -74,8 +75,7 @@ public class TestRunResults {
   
   public String getURL(final TestResult tr) {
     StringBuffer sb = new StringBuffer();
-    sb.append(run.getUrl()).append(testResultAction).append(tr.getUrl());
-    
+    sb.append(tr.getOwner().getUrl()).append(testResultAction).append(tr.getUrl());
     return sb.toString();
   }   
   
@@ -93,5 +93,15 @@ public class TestRunResults {
   
   public int getPassCount() {
     return this.passCount;
+  }
+  
+  public int getMaxNumBuilds(int max) {
+    return Math.min(run.getNumber(), max);    
+  }
+  
+  public String getRunArtifactURL(final Run run) {
+    List<Artifact> ars = run.getArtifactsUpTo(1);
+    
+    return ars.size() == 1 ? ars.get(0).getHref() : "";
   }
 }
