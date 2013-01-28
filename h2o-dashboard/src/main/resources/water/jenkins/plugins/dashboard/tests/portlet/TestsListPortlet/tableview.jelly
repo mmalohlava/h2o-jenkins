@@ -27,6 +27,7 @@ Q(function () {
 <j:forEach var="job" items="${jobs}">
 <j:set var="testResultsBean" value="${it.getJobTestLastRunResults(job)}" />
 <j:set var="MAX" value="${testResultsBean.getMaxNumBuilds(it.getBuildsToUse())}" />
+<j:set var="START_BUILD_NUM" value="${testResultsBean.getBuildNumber()}" />
 <div class="jobView">    
   <div class="trendjob">
   <a href="${testResultsBean.run.url}testReport/" title="Run details"><img src="${rootURL}/plugin/h2o-dashboard/images/detail.png" alt="Click to see run details..." /></a>
@@ -43,33 +44,34 @@ Q(function () {
   <!-- download table -->
   <div class="table w98per nooverflow">        
    
-   <div class="trow nooverflow">
-   <j:set var="ix" value="${MAX}" />
+   <div class="trow nooverflow theader">
+   <j:set var="cn" value="0" />
+   <j:set var="ix" value="${START_BUILD_NUM}" />
    <j:set var="rx" value="${testResultsBean.run}" />
-   <j:while test="${ix!=0}">
-          <j:choose>
-              <j:when test="${rx == null}"><j:set var="rnum" value="NA" /></j:when>
-              <j:otherwise><j:set var="rnum" value="#${rx.number}" /></j:otherwise>
-          </j:choose>
+   <j:while test="${cn!=MAX}">
+          <j:set var="rnum" value="#${ix}" />
           <span class="w20 tcell testHeader">${rnum}</span>
           <j:set var="ix" value="${ix-1}" />
+          <j:set var="cn" value="${cn+1}" />
           <j:set var="rx" value="${testResultsBean.job.getBuildByNumber(ix)}" />
    </j:while>
    </div>
    
    <div class="trow nooverflow">
-   <j:set var="ix" value="${MAX}" />
+   <j:set var="ix" value="${START_BUILD_NUM}" />
    <j:set var="rx" value="${testResultsBean.run}" />
-   <j:while test="${ix!=0}">
+   <j:set var="cn" value="0" />
+   <j:while test="${cn!=MAX}">
      <span class="w20 tcell tsave">
      <j:choose>
-       <j:when test="${rx == null}"><st:nbsp/></j:when>
+       <j:when test="${rx == null || testResultsBean.getRunArtifactURL(rx)==null}"><img src="${rootURL}/plugin/h2o-dashboard/images/na.png" alt="NA" /></j:when>
        <j:otherwise>
-       <a href="${testResultsBean.getRunArtifactURL(rx)}"><img src="${rootURL}/plugin/h2o-dashboard/images/save.png" alt="Download not" /></a></j:otherwise>
+       <a href="${testResultsBean.getRunArtifactURL(rx)}" title="Download"><img src="${rootURL}/plugin/h2o-dashboard/images/save.png" alt="Download" /></a></j:otherwise>
      </j:choose>
      </span>
      <j:set var="ix" value="${ix-1}" />
      <j:set var="rx" value="${testResultsBean.job.getBuildByNumber(ix)}" />
+     <j:set var="cn" value="${cn+1}" />
     </j:while>
    </div>
    
@@ -96,16 +98,14 @@ Q(function () {
     <div class="trow theader nooverflow">        
         <span class="w20 tcell"> </span>
         <span class="w120 tcell"> </span>
-        <j:set var="ix" value="${MAX}" />
+        <j:set var="ix" value="${START_BUILD_NUM}" />
         <j:set var="rx" value="${testResultsBean.run}" />
-        <j:while test="${ix!=0}">
-          <j:choose>
-              <j:when test="${rx == null}"><j:set var="bnum" value="NA" /></j:when>
-              <j:otherwise><j:set var="bnum" value="#${rx.number}" /></j:otherwise>
-          </j:choose>
-          <span class="w20 tcell testHeader">${bnum}</span>
-          <j:set var="rx" value="${rx.previousBuild}" />
+        <j:set var="cn" value="0" />
+        <j:while test="${cn!=MAX}">          
+          <span class="w20 tcell testHeader">#${ix}</span>
           <j:set var="ix" value="${ix-1}" />
+          <j:set var="rx" value="${testResultsBean.job.getBuildByNumber(ix)}" />
+          <j:set var="cn" value="${cn+1}" />
         </j:while>
     </div>
     <!-- body -->
@@ -113,9 +113,10 @@ Q(function () {
         <div class="trow nooverflow">
           <span class="w20 tcell"><a href="${testResultsBean.getURL(test)}/history" title="Test history"><img src="${rootURL}/plugin/h2o-dashboard/images/trend.png" alt="Click to see trends..." /></a></span>          
           <span class="w120 tcell nooverflow"><a href="${testResultsBean.getURL(test)}" title="Test details">${test.name}</a></span>
-          <j:set var="ix" value="0" />
-          <j:set var="tx" value="${test}" />          
-          <j:while test="${ix!=MAX}">
+          <j:set var="ix" value="${START_BUILD_NUM}" />
+          <j:set var="tx" value="${test}" />
+          <j:set var="cn" value="0" />          
+          <j:while test="${cn!=MAX}">
             <j:choose>
               <j:when test="${tx == null}"><j:set var="tclass" value="testDisabled" /></j:when>
               <j:when test="${tx.isPassed()}"><j:set var="tclass" value="testOk" /></j:when>
@@ -129,9 +130,10 @@ Q(function () {
               <span class="w20 tcell ${tclass}"><st:nbsp/></span>
               </a></j:otherwise>
             </j:choose>
-            
-            <j:set var="tx" value="${test.previousResult}" />
-            <j:set var="ix" value="${ix+1}" />
+                        
+            <j:set var="ix" value="${ix-1}" />
+            <j:set var="tx" value="${testResultsBean.getCaseResultInBuild(ix, pack, test)}" />
+            <j:set var="cn" value="${cn+1}" />
           </j:while>                  
         </div>
     </j:forEach>

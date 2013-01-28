@@ -5,6 +5,8 @@ import hudson.model.Run;
 import hudson.model.Run.Artifact;
 import hudson.tasks.junit.PackageResult;
 import hudson.tasks.junit.CaseResult;
+import hudson.tasks.junit.ClassResult;
+import hudson.tasks.test.AbstractTestResultAction;
 import hudson.tasks.test.TestResult;
 
 import java.util.ArrayList;
@@ -102,6 +104,26 @@ public class TestRunResults {
   public String getRunArtifactURL(final Run run) {
     List<Artifact> ars = run.getArtifactsUpTo(1);
     
-    return ars.size() == 1 ? ars.get(0).getHref() : "";
+    return ars.size() > 0 ? run.getUrl() + "artifact/" + ars.get(0).getHref() : null;
+  }
+  
+  public int getBuildNumber() {
+    return run!=null ? run.getNumber() : 0;     
+  }
+  
+  public CaseResult getCaseResultInBuild(int buildNum, PackageResult pr, CaseResult cr) {
+    Run r = job.getBuildByNumber(buildNum);
+    if (r == null) return null;
+    
+    AbstractTestResultAction tra = r.getAction(pr.getParentAction().getClass());
+    if(tra!=null) {
+        TestResult result = tra.findCorrespondingResult(pr.getId());
+        if (result!=null && result instanceof PackageResult)
+          for (ClassResult classResult : ((PackageResult) result).getChildren()) {
+            CaseResult previousCR = classResult.getCaseResult(cr.getName());
+            if (previousCR!=null) return previousCR;
+          }
+    }
+    return null;
   }
 }
