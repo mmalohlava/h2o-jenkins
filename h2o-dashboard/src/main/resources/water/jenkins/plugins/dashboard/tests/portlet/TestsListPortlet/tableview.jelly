@@ -32,6 +32,8 @@ Q(function () {
   <div class="trendjob">
   <a href="${testResultsBean.run.url}testReport/" title="Run details"><img src="${rootURL}/plugin/h2o-dashboard/images/detail.png" alt="Click to see run details..." /></a>
   <a href="${testResultsBean.run.url}testReport/history" title="Run history"><img src="${rootURL}/plugin/h2o-dashboard/images/trend.png" alt="Click to see job trends..." /></a>
+  <a href="${testResultsBean.run.url}changes" title="Changes"><img src="${rootURL}/plugin/h2o-dashboard/images/changes.png" alt="Click to see changes..." /></a>
+  <a href="${testResultsBean.run.url}console" title="Console"><img src="${rootURL}/plugin/h2o-dashboard/images/console.png" alt="Click to see console output..." /></a>
   <span id="tglFailedPack" class="label labelFailed">Failed</span>
   <span id="tglOkPack" class="label labelOk">Passed</span> 
   </div>
@@ -49,8 +51,38 @@ Q(function () {
    <j:set var="ix" value="${START_BUILD_NUM}" />
    <j:set var="rx" value="${testResultsBean.run}" />
    <j:while test="${cn!=MAX}">
-          <j:set var="rnum" value="#${ix}" />
-          <span class="w20 tcell testHeader">${rnum}</span>
+          <j:set var="rnum" value="#${ix}" />          
+          <a href="${rx != null ? rx.getUrl() : '#'}" title="Go to build..."><span class="w20 tcell testHeader">${rnum}</span></a>
+          <j:set var="ix" value="${ix-1}" />
+          <j:set var="cn" value="${cn+1}" />
+          <j:set var="rx" value="${testResultsBean.job.getBuildByNumber(ix)}" />
+   </j:while>
+   </div>
+   
+   <div class="trow nooverflow theader">
+   <j:set var="cn" value="0" />
+   <j:set var="ix" value="${START_BUILD_NUM}" />
+   <j:set var="rx" value="${testResultsBean.run}" />
+   <j:while test="${cn!=MAX}">
+          <j:set var="rnum" value="#${ix}" />          
+          <span class="w20 tcell tsave">
+          <a href="${rx != null ? rx.getUrl()+'changes' : '#'}" title="Changes"><img src="${rootURL}/plugin/h2o-dashboard/images/changes.png" alt="Changes" /></a>
+          </span>
+          <j:set var="ix" value="${ix-1}" />
+          <j:set var="cn" value="${cn+1}" />
+          <j:set var="rx" value="${testResultsBean.job.getBuildByNumber(ix)}" />
+   </j:while>
+   </div>
+   
+    <div class="trow nooverflow theader">
+   <j:set var="cn" value="0" />
+   <j:set var="ix" value="${START_BUILD_NUM}" />
+   <j:set var="rx" value="${testResultsBean.run}" />
+   <j:while test="${cn!=MAX}">
+          <j:set var="rnum" value="#${ix}" />          
+          <span class="w20 tcell tsave">
+          <a href="${rx != null ? rx.getUrl()+'console' : '#'}" title="Console"><img src="${rootURL}/plugin/h2o-dashboard/images/console.png" alt="Console" /></a>
+          </span>
           <j:set var="ix" value="${ix-1}" />
           <j:set var="cn" value="${cn+1}" />
           <j:set var="rx" value="${testResultsBean.job.getBuildByNumber(ix)}" />
@@ -102,7 +134,7 @@ Q(function () {
         <j:set var="rx" value="${testResultsBean.run}" />
         <j:set var="cn" value="0" />
         <j:while test="${cn!=MAX}">          
-          <span class="w20 tcell testHeader">#${ix}</span>
+          <a href="${rx != null ? rx.getUrl() : '#'}"><span class="w20 tcell testHeader">#${ix}</span></a>
           <j:set var="ix" value="${ix-1}" />
           <j:set var="rx" value="${testResultsBean.job.getBuildByNumber(ix)}" />
           <j:set var="cn" value="${cn+1}" />
