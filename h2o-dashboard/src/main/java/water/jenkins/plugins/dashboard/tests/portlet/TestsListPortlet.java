@@ -27,7 +27,7 @@ public class TestsListPortlet extends DashboardPortlet {
   private static final int DEFAUL_BUILDS_TO_USE = 40;
   
   private int buildsToUse = DEFAUL_BUILDS_TO_USE;
-
+  
   @DataBoundConstructor
   public TestsListPortlet(String name, int buildsToUse) {
     super(name);
@@ -74,5 +74,5 @@ public class TestsListPortlet extends DashboardPortlet {
 
   public int getBuildsToUse() {
     return buildsToUse > 0 ? buildsToUse : DEFAUL_BUILDS_TO_USE;
-  }  
+  }
 }

@@ -1,8 +1,10 @@
 package water.jenkins.plugins.dashboard.tests;
 
+import hudson.model.Build;
 import hudson.model.Job;
 import hudson.model.Run;
 import hudson.model.Run.Artifact;
+import hudson.scm.ChangeLogSet;
 import hudson.tasks.junit.PackageResult;
 import hudson.tasks.junit.CaseResult;
 import hudson.tasks.junit.ClassResult;
@@ -13,6 +15,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class TestRunResults {
   
@@ -21,6 +24,9 @@ public class TestRunResults {
   private ArrayList<PackageResult> packageResults = new ArrayList<PackageResult>();
   private HashMap<PackageResult, ArrayList<CaseResult>> caseResults = new HashMap<PackageResult, ArrayList<CaseResult>>(); 
   
+  /** Change set cache */
+  private Map<Run, ChangeLogSet> changeSetCache = new HashMap<Run, ChangeLogSet>(); 
+
   final private Job job;
   final private Run run;
   final private String testResultAction;
@@ -123,6 +129,19 @@ public class TestRunResults {
             CaseResult previousCR = classResult.getCaseResult(cr.getName());
             if (previousCR!=null) return previousCR;
           }
+    }
+    return null;
+  }
+  
+  public ChangeLogSet getChangeLogSet(final Run r) {    
+    if (r instanceof Build) {
+      if (changeSetCache.containsKey(r)) {
+        System.out.println("Cached TestRunResults.getChangeSet(): " + r);
+        return changeSetCache.get(r);
+      } else {
+        Build b = (Build) r;
+        ChangeLogSet set = b.getChangeSet(); 
+      }
     }
     return null;
   }
