@@ -110,7 +110,7 @@ public class TestRunResults {
   public String getRunArtifactURL(final Run run) {
     List<Artifact> ars = run.getArtifactsUpTo(1);
     
-    return ars.size() > 0 ? run.getUrl() + "artifact/" : null;
+    return ars.size() > 0 ? run.getUrl() + "artifact/target/" : null;
   }
   
   public int getBuildNumber() {
