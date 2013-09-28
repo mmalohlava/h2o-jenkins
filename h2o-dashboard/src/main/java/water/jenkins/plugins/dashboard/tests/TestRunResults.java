@@ -11,6 +11,10 @@ import hudson.tasks.junit.ClassResult;
 import hudson.tasks.test.AbstractTestResultAction;
 import hudson.tasks.test.TestResult;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -108,9 +112,27 @@ public class TestRunResults {
   }
   
   public String getRunArtifactURL(final Run run) {
-    List<Artifact> ars = run.getArtifactsUpTo(1);
-    
-    return ars.size() > 0 ? run.getUrl() + "artifact/target/" : null;
+    List<Artifact> ars = run.getArtifacts();
+    if (ars.size() == 0) return null;
+    for (Artifact a : ars) 
+    	if (a.getFileName().equals("url")) {
+    		File f = a.getFile();
+    		String url = null;
+    		try {
+    			url = readLine(f);
+    		} catch (IOException _) {
+    		}
+    		return url;
+    	}
+    return run.getUrl() + "artifact/target/index.html";
+  }
+  
+  static String readLine(File f) throws IOException {
+	  BufferedReader in = null;
+	  try {
+		  in = new BufferedReader(new FileReader(f));
+		  return in.readLine();
+	  } finally { in.close(); }
   }
   
   public int getBuildNumber() {
